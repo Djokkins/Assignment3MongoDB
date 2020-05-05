@@ -19,11 +19,12 @@ namespace assignment3MongoDB.Models
 
         public int Age { get; set; }
 
-        public list <circle> { get; set; }
+        // public list <circle> circles{ get; set; }
 
+        // public list <Posts> Wall { get; set; }
         public override string ToString()
         {
-            return string.Format("Person({0}, {1}, {2}, {3}, {4})", Id, Firstname, Lastname, Age, Author);
+            return string.Format("Person({0}, {1}, {2}, {3}, {4})", Id, Firstname, Lastname, Age);
         }
 
     }

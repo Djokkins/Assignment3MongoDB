@@ -1,4 +1,7 @@
 ﻿using System;
+using MongoDB.Driver;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace assignment3MongoDB
 {
@@ -6,7 +9,7 @@ namespace assignment3MongoDB
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("");
         }
     }
 }
