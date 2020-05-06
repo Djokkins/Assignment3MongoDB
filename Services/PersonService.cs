@@ -20,7 +20,7 @@ namespace assignment3MongoDB.Services
                 _people = database.GetCollection<Person>("People");
 
             }
-
+        PersonService psdb = new PersonService();
             public List<Person> Get() =>
                 _people.Find(person => true).ToList();
 

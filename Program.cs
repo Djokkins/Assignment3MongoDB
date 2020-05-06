@@ -11,6 +11,10 @@ namespace assignment3MongoDB
     {
         static void Main(string[] args)
         {
+            PersonService psdb = new PersonService();
+            PostsServices podb = new PostsServices();
+            PollServices pldb = new PollServices();
+            CircleService ccdb = new CircleService();
             while (true)
             {
                 Console.WriteLine("Enter User Name: ");
