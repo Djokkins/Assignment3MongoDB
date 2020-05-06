@@ -6,7 +6,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace assignment3MongoDB.Models
 {
-    class Posts
+    public class Posts
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
@@ -17,6 +17,6 @@ namespace assignment3MongoDB.Models
 
         public string content { get; set; }
 
-      
+        public string CircleID { get; set; }
 }
 }

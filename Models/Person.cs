@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes; 
+using MongoDB.Bson.Serialization.Attributes;
+using assignment3MongoDB.Models;
+
 
 namespace assignment3MongoDB.Models
 {
@@ -19,12 +21,13 @@ namespace assignment3MongoDB.Models
 
         public int Age { get; set; }
 
-        // public list <circle> circles{ get; set; }
+        public List<Circle> Circles{ get; set; }
 
-        // public list <Posts> Wall { get; set; }
+        public List<Posts> Wall { get; set; }
+        public List<Person> BlockedUsers { get; set; }
         public override string ToString()
         {
-            return string.Format("Person({0}, {1}, {2}, {3}, {4})", Id, Firstname, Lastname, Age);
+            return string.Format("Person({0}, {1}, {2}, {3})", Id, Firstname, Lastname, Age);
         }
 
     }
