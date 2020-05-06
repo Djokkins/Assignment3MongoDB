@@ -21,6 +21,10 @@ namespace assignment3MongoDB.Models
 
         public int Age { get; set; }
 
+        public string Gender { get; set; }
+
+        public List <Person> blocked { get; set; }
+
         public List<Circle> Circles{ get; set; }
 
         public List<Posts> Wall { get; set; }

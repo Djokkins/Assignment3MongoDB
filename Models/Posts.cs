@@ -17,6 +17,8 @@ namespace assignment3MongoDB.Models
 
         public string content { get; set; }
 
+        public DateTime created { get; set; } //understøtter mongoDB datetime?
+
         public string CircleID { get; set; }
 }
 }
